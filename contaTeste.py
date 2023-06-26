@@ -8,7 +8,7 @@ def criar_conta_corrente(numero, titular, saldo, limite):
     return conta
 
 
-def deposita(conta, valor):
+def depositar(conta, valor):
     conta["saldo"] += valor
 
 

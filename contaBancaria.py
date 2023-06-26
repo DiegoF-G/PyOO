@@ -1,3 +1,4 @@
+# Classe "ContaCorrente" criada para instanciar os objetos "conta", somente com atributos ainda...
 class ContaCorrente:
     def __init__(self, numero, titular, saldo, limite=1000):
         self.numero = numero
