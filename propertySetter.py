@@ -1,8 +1,8 @@
-# De modo a deixar a sintaxe mais interessante, podemos usar as declarações @property e @atributo.setter para realizar
+# De modo a deixar a sintaxe mais interessante, podemos usar os decoradores @property e @atributo.setter para realizar
 # as mesmas funcionalidades dos getters e setters.
 # Usarei @property para deixar disponível para validação os atributos titular e saldo e @atributo.setter para mudar o
 # atributo limite, que no contexto da classe é plausível.
-# Importante salientar que as declarações @property e @atributo.setter não violam a privacidade dos atributos! Apenas
+# Importante salientar que os decoradores @property e @atributo.setter não violam a privacidade dos atributos! Apenas
 # permitem um acesso controlado e não direto aos mesmos, servem como uma camada intermediária!
 class ContaCorrente:
     def __init__(self, numero, titular, saldo, limite=1000):
