@@ -18,13 +18,20 @@ class ContaCorrente:
     def extrato(self):
         print(f'Saldo de {self.__saldo} do titular {self.__titular}')
 
-    def depositar(self, valor):
+    def depositar(self, valor=0):
         self.__saldo += valor
 
-    def sacar(self, valor):
-        self.__saldo -= valor
+    def __pode_sacar(self, saque):
+        saque_maximo = self.__saldo + self.__limite
+        return saque <= saque_maximo
 
-    def transferir(self, destino, valor):
+    def sacar(self, valor=0):
+        if self.__pode_sacar(valor):
+            self.__saldo -= valor
+        else:
+            print('\033[0:31mO saque solicitado não é possível, pois limite ultrapassado não é suficiente.\033[m')
+
+    def transferir(self, destino, valor=0):
         self.sacar(valor)
         destino.depositar(valor)
 
@@ -43,3 +50,8 @@ class ContaCorrente:
     @limite.setter
     def limite(self, limite):
         self.__limite = limite
+
+    @staticmethod
+    def codigos_bancos():
+        codigos = "{'BB': '001', 'Caixa': '104', 'Bradesco': '237'}".replace("'", "").replace("{", "").replace("}", "")
+        return codigos
