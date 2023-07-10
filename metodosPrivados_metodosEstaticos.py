@@ -19,7 +19,7 @@ class ContaCorrente:
         if self.__pode_sacar(valor):
             self.__saldo -= valor
         else:
-            print('\033[0:31mO saque solicitado não é possível, pois limite ultrapassado não é suficiente.\033[m')
+            print('\033[0:31mO saque solicitado não é possível, pois limite foi ultrapassado.\033[m')
 
     def transferir(self, destino, valor=0):
         self.sacar(valor)
