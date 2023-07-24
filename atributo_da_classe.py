@@ -2,7 +2,7 @@ class Circulo:
     pi = 3.18  # atributo da classe, que não é incorporado nas instâncias
 
 
-circulo1 = Circulo()
+circulo1 = Circulo()  # instânciando a classe "Circulo", criando o objeto "circulo1"
 
 print(circulo1.pi)  # aqui o py procurou o atributo na instância e não achou, então foi buscar esse atributo na classe
 
