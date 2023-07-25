@@ -16,6 +16,7 @@ class ContaCorrente:
         self.saldo -= valor
 
 
+# Testando...
 conta1234 = ContaCorrente(1234, 'Diego', 10000, 2500)
 testes = (print('Extrato inicial...'), conta1234.extrato(), print('Depositando 1000...'), conta1234.depositar(1000),
           conta1234.extrato(), print('Sacando 1500...'), conta1234.sacar(1500), conta1234.extrato())
