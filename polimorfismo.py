@@ -53,6 +53,7 @@ class Serie(Programa):
         return f'Serie(nome={self._nome}, ano={self.ano}, temporadas={self.temporadas})'
 
 
+# Testando...
 vingadores, atlanta = Filme('vingadores - guerra infinita', 2018, 160), Serie('atlanta', 2018, 2)
 lista = [atlanta, vingadores]
 for i in range(1000):
