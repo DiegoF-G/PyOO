@@ -22,6 +22,7 @@ class ContaCorrente:
         destino.depositar(valor)
 
 
+# Testando...
 conta1, conta2 = ContaCorrente(123, 'Diego', 10000), ContaCorrente(321, 'Diogo', 5000)
 testes = (conta1.extrato(), conta2.extrato(), print('Transferindo 1000 do Diego para o Diogo'),
           conta1.transferir(conta2, 1000), conta1.extrato(), conta2.extrato(),
