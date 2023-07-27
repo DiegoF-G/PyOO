@@ -12,14 +12,6 @@ class Funcionario:
         self._nome = nome.title()
         self._horas = 0
 
-    @property
-    def nome(self):
-        return self._nome
-
-    @property
-    def horas(self):
-        return self._horas
-
     def registra_horas(self, horas_trabalhadas):
         self._horas += horas_trabalhadas
         print('Horas registradas.')
@@ -48,7 +40,7 @@ class Alura(Funcionario):
 # Classe Mixin
 class Hipster:
     def __str__(self):
-        return f'Hipster,  {self.nome}'
+        return f'Hipster,  {self._nome}'
 
 
 # Classes filhas
