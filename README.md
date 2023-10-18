@@ -1,5 +1,5 @@
 # PyOO
->Repository status: Finish
+>Repository status: Finished
 
 This repository is about my study of Python OO (Object Oriented) in Alura platform.
 
